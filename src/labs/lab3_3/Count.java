@@ -16,7 +16,10 @@ public class Count
     {
         String phrase;    // a string of characters
         int countBlank;   // the number of blanks in the phrase
-
+        int countA = 0;
+        int countE = 0;
+        int countS = 0;
+        int countT = 0;
         int length;       // the length of the phrase
         char ch;          // an individual character in the string
 
@@ -39,14 +42,36 @@ public class Count
         // and count the blank spaces
         for (int i = 0; i < length; i++) {
             ch = phrase.charAt(i);
-            if (ch == ' ') {
-                countBlank ++;
+            switch (ch) {
+                case 'a':
+                case 'A':
+                    countA ++;
+                    break;
+                case 'e':
+                case 'E':
+                    countE ++;
+                    break;
+                case 's':
+                case 'S':
+                    countS ++;
+                    break;
+                case 't':
+                case 'T':
+                    countT ++;
+                    break;
+                case ' ':
+                    countBlank ++;
+                    break;
             }
         }
 
         // Print the results
         System.out.println ();
         System.out.println ("Number of blank spaces: " + countBlank);
+        System.out.println ("Number of blank A's: " + countA);
+        System.out.println ("Number of blank E's: " + countE);
+        System.out.println ("Number of blank S's: " + countS);
+        System.out.println ("Number of blank T's: " + countT);
         System.out.println ();
     }
 }
