@@ -1,0 +1,5 @@
+2. "Class ‘Helo’ is public, should be declared in a file named ‘Helo.java'"
+3. The output of the program changed. The modified part is a string, it won’t cause problem while compiling and running.
+4. "Illegal line end in string literal"
+5. "',' or ')' expected", "Cannot resolve symbol"
+6. "';' expected"
