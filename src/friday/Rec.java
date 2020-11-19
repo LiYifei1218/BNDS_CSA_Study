@@ -1,4 +1,4 @@
-package fridays.f02;
+package friday;
 import java.util.*;
 public class Rec {
     public static void main(String[] args) {
