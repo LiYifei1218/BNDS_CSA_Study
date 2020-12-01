@@ -1,4 +1,4 @@
-package examples.PPT4;
+package examples.ppt4;
 
 // this will be the driven class
 public class Coin {

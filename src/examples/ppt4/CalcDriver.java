@@ -1,4 +1,4 @@
-package examples.PPT4;
+package examples.ppt4;
 
 import java.util.Scanner;
 

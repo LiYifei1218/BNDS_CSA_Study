@@ -1,4 +1,4 @@
-package examples.PPT4;
+package examples.ppt4;
 
 public class CoinFlip {
     public static void main (String[] args){
