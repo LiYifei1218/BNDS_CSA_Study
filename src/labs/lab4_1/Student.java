@@ -58,6 +58,5 @@ public class Student
     {
         return "Name: " + name + "  Test1: " + score1 + "  Test2: " + score2;
     }
-
 }
 
