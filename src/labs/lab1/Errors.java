@@ -1,4 +1,4 @@
-package labs.lab01;
+package labs.lab1;
 
 // ********************************************
 // Problems.java
