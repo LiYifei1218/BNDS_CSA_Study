@@ -24,10 +24,6 @@ public class Item {
     }
 
     public String toString() {
-        return "Item{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                ", quantity=" + quantity +
-                '}';
+        return name + '\t' + price + "\t\t\t" + quantity + "\t\t\t" + (price * quantity);
     }
 }
