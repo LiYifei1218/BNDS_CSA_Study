@@ -1,7 +1,5 @@
 package labs.lab5_2;
 
-import java.util.Arrays;
-
 public class ShoppingCart {
 
     private Item[] cart;
