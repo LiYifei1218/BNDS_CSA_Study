@@ -58,6 +58,6 @@ public class Shop
             System.out.println(cart.get(i));
             total += (cart.get(i).getPrice() * cart.get(i).getQuantity());
         }
-        System.out.println("\nTOTAL: " + total);
+        System.out.println("\n\nTOTAL: " + total);
     }
 }
