@@ -1,7 +1,7 @@
 package examples.ppt6;
 
 // this will be the driven class
-public class Coin {
+public class Coin implements Lockable{
     private final int HEADS = 0; // private keyword makes it unaccessible outside this class
     private final int TAILS = 1;
     private int face; //instance data of the class, applicable to all objects of the Coin class
@@ -29,4 +29,21 @@ public class Coin {
         return faceName;
     }
 
+
+
+    public void setKey() {
+
+    }
+
+    public void lock() {
+
+    }
+
+    public void unlock() {
+
+    }
+
+    public boolean locked() {
+        return false;
+    }
 }
