@@ -14,7 +14,7 @@ public class Coin implements Lockable{
     // method declaration
     public void flip(){ // flip the coin, void is the return type of this method, means return nothing
         if (isLocked)
-            System.out.println("Object Locked!");
+            System.out.println("Object locked, please unlock!");
         else
             face = (int)(Math.random() * 2); // face will either be 1 or 0
     }
