@@ -13,20 +13,34 @@ public class Coin implements Lockable{
     }
     // method declaration
     public void flip(){ // flip the coin, void is the return type of this method, means return nothing
-        face = (int)(Math.random() * 2); // face will either be 1 or 0
+        if (isLocked)
+            System.out.println("Object Locked!");
+        else
+            face = (int)(Math.random() * 2); // face will either be 1 or 0
     }
     public boolean isHeads(){ // boolean is the return type of this method, returns either True or false
-        return (face == HEADS);
+        if (isLocked) {
+            System.out.println("Object Locked!");
+            return false;
+        }
+        else
+            return (face == HEADS);
     }
     public String toString(){ // return type is String, returns a string
-        String faceName; // local variable because it is declared inside a method, inaccessible outside
-        if (face == HEADS){
-            faceName = "Heads";
+        if (isLocked) {
+            System.out.println("Object Locked!");
+            return "Locked";
         }
         else {
-            faceName = "Tails";
+            String faceName; // local variable because it is declared inside a method, inaccessible outside
+            if (face == HEADS){
+                faceName = "Heads";
+            }
+            else {
+                faceName = "Tails";
+            }
+            return faceName;
         }
-        return faceName;
     }
 
 
@@ -38,11 +52,21 @@ public class Coin implements Lockable{
     }
 
     public void lock(int key) {
-        if (key == KEY) isLocked = true;
+        if (key == KEY) {
+            isLocked = true;
+            System.out.println("Locked!");
+        }
+        else
+            System.out.println("Key Error!");
     }
 
     public void unlock(int key) {
-        if (key == KEY) isLocked = false;
+        if (key == KEY) {
+            isLocked = false;
+            System.out.println("Unlocked");
+        }
+        else
+            System.out.println("Key Error!");
     }
 
     public boolean locked() {
