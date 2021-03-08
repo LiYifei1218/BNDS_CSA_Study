@@ -30,20 +30,22 @@ public class Coin implements Lockable{
     }
 
 
+    private int KEY;
+    private boolean isLocked;
 
-    public void setKey() {
-
+    public void setKey(int key) {
+        KEY = key;
     }
 
-    public void lock() {
-
+    public void lock(int key) {
+        if (key == KEY) isLocked = true;
     }
 
-    public void unlock() {
-
+    public void unlock(int key) {
+        if (key == KEY) isLocked = false;
     }
 
     public boolean locked() {
-        return false;
+        return isLocked;
     }
 }
