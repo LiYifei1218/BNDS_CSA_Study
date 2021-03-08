@@ -1,0 +1,1 @@
+A class contains methods that have both defination and 
