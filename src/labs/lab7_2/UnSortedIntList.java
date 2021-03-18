@@ -1,10 +1,11 @@
 package labs.lab7_2;
 
-public class SortedIntList extends IntList{
-    public SortedIntList(int size) {
+public class UnSortedIntList extends SortedIntList{
+    public UnSortedIntList(int size) {
         super(size);
     }
 
+    public void ss(){}
 
     public void add(int value)
     {

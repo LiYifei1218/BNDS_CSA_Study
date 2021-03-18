@@ -13,6 +13,7 @@ public class ListTest
     public static void main(String[] args)
     {
         IntList myList = new SortedIntList(10);
+        ((UnSortedIntList) myList).ss();
         System.out.println(myList);
         myList.add(100);
         System.out.println(myList);

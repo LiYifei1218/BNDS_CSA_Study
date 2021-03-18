@@ -14,6 +14,7 @@ public class IntList
     protected int[] list;
     protected int numElements = 0;
 
+
     //-------------------------------------------------------------
     // Constructor -- creates an integer list of a given size.
     //-------------------------------------------------------------
